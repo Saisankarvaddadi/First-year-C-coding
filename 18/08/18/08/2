@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int i,n,sum=0,k=1;
+int fact[100];
+printf("Enter the value of n: ");
+scanf("%d",&n);
+printf("Enter array elements");
+for(i=0;i<n;i++)
+{
+scanf("%d",&fact[i]);
+}
+for(i=0;i<n;i++)
+{
+k=fact[i]*k;
+sum=sum+k;
+}
+printf("sum of factorials are %d\n",sum);
+return 0;
+}
