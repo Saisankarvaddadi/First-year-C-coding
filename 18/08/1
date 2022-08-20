@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+int i,j,arr[100],n,flag;
+printf("Enter size of array:");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+flag=0;
+scanf("%d",&arr[i]);
+}
+for(i=0;i<n;i++)
+{
+for(j=0;j<i;j++)
+{
+if(arr[i]==arr[j])
+{
+flag=1;
+break;
+}
+}
+}
+if(flag==1)
+{
+printf("DUPLICATE");
+}
+else
+{
+printf("UNIQUE");
+}
+return 0;
+}
