@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    char sai[100];
+    int uppercount=0,lowercount=0,numcount=0;
+    printf("Enter string:\n");
+    scanf("%s",sai);
+    for(int v=0;sai[v]!='\0';v++)
+    {
+        if(sai[v]>=65 && sai[v]<=90)
+        uppercount++;
+        else if(sai[v]>=97 && sai[v]<=122)
+        lowercount++;
+        else if(sai[v]>=48 && sai[v]<=57)
+        numcount++;
+    }
+    printf("the uppercase count of character is %d\n",uppercount);
+    printf("the lowercase count of character is %d\n",lowercount);
+    printf("the numcount count of character is %d\n",numcount);
+    return 0;
+}
