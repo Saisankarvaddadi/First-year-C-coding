@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+void substring(char s[],int m)
+{ #
+int a,i,l,j;
+for(i=0;i<=m;i++)
+{
+for(j=0;j<m-i;j++)
+{
+a=j+i;
+for(l=j;l<=a;l++)
+{
+printf("%c",s[l]);
+}
+printf("\n");
+}
+}
+}
+int main()
+{
+char s[]="abcd";
+substring(s,strlen(s));
+return 0;
+}
