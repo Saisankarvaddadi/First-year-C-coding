@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include<string.h>
+int main() 
+{
+char a[20],b[20];
+printf("Enter any 2 strings:");
+scanf("%s",a);
+scanf("%s",b);
+int i,j,temp,n,m,count=0,flag;
+n=strlen(a);
+m=strlen(b);
+for(i=0;i<n-1;i++)
+{
+    for(j=0;j<n-i-1;j++)
+    {
+        if(a[j]>a[j+1])
+        {
+            temp=a[j];
+            a[j]=a[j+1];
+            a[j+1]=temp;
+        }
+    }
+}
+for(i=0;i<n-1;i++)
+{
+    for(j=0;j<n-i-1;j++)
+    {
+        if(b[j]>b[j+1])
+        {
+            flag=b[j];
+            b[j]=b[j+1];
+            b[j+1]=flag;
+        }
+    }
+}
+for(i=0;a[i]!='\0';i++)
+{
+if(a[i]==b[i])
+{
+    count++;
+}
+}
+if(count==n)
+{
+    printf("Anagram");
+}
+else
+{
+    printf("Not Anagram");
+}
+    return 0;
+}
+
+
