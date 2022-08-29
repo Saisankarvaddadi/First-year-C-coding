@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include<math.h>
+#include<stdlib.h>
+int find_nth_term(int n,int x,int y,int z)
+{
+if(n==1)
+{
+return x;
+}
+else if(n==2)
+{
+return y;
+}
+else if(n==3)
+{
+return z;
+}
+else
+{
+return find_nth_term(n-1,x,y,z)+find_nth_term(n-2,x,y,z)+find_nth_term(n-3,x,y,z);
+}
+}
+int main()
+{
+int n,x,y,z,answer;
+scanf("%d %d %d %d",&n,&x,&y,&z);
+answer=find_nth_term(n,x,y,z);
+printf("%d",answer);
+return 0;
+}
