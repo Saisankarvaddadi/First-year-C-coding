@@ -1,0 +1,19 @@
+#include<stdio.h>
+void display(int l,int m);
+void main()
+{
+    int a,b;
+    printf("enter range:\n");
+    scanf("%d %d",&a,&b);
+    display(a,b);
+}
+void display(int l,int m)
+{
+    if(l>m)
+    return;
+    else
+    {
+    printf("%d\n",l);
+    display(l+1,m);
+    }
+}
