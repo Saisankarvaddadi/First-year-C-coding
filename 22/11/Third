@@ -1,0 +1,14 @@
+'''program to read and display 
+students data'''
+sno=int(input('Enter student roll number:'))
+name=input('Enter student name:')
+gender=input('Enter gender:')
+group=input('Enter group:')
+phoneno=int(input('Enter your phone number:'))
+address=input('Enter your address:')
+print('Roll no:',sno)
+print('Student name:',name)
+print('Gender:',gender)
+print('Group:',group)
+print('Phone no:',phoneno)
+print('Address:',address)
