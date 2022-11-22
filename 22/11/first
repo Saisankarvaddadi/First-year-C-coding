@@ -1,0 +1,7 @@
+#program to calculate EMI
+principal=int(input('Enter Amount'))
+time=int(input('Tme period'))
+intrest=float(input('Intrest'))
+si=(principal*time*intrest)/100
+emi=(si+principal)/time*12
+print('EMI:',emi)
